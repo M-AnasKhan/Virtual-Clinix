@@ -11,3 +11,4 @@ Technology Stack
 The entire platform operates at zero monthly cost during prototype phase. The frontend is hosted on Vercel, backend logic runs on Supabase Edge Functions, video consultations are powered by Jitsi Meet with no API key requirement, transactional emails are delivered via Resend.com, and all data is stored in Supabase PostgreSQL with 500MB of free storage. The upgrade path to a production-scale deployment requires only a Supabase Pro subscription at $25/month — no architectural changes are needed.
 Status
 This project is currently in active prototype development. The core booking flow, doctor verification pipeline, video consultation module, and medical record generation are implemented. Payment gateway integration is configured in test mode. Contributions, issues, and feature suggestions are welcome via the repository's issue tracker.
+You
