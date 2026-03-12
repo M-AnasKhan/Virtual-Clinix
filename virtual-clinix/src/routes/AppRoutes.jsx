@@ -7,14 +7,21 @@ import PatientDashboard from '../pages/dashboard/PatientDashboard'
 import DoctorDashboard from '../pages/dashboard/DoctorDashboard'
 import AdminDashboard from '../pages/dashboard/AdminDashboard'
 import ProtectedRoute from './ProtectedRoute'
+import PatientConsultationRoom from '../pages/patient/ConsultationRoom'
+import DoctorConsultationRoom  from '../pages/doctor/ConsultationRoom'
+
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/login" />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/patient/consultation/:appointmentId" element={<PatientConsultationRoom />} />
+      <Route path="/doctor/consultation/:appointmentId"  element={<DoctorConsultationRoom />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/verify-email" element={<VerifyEmail />} />
+      <Route path="/verify-email" element={<VerifyEmail />} 
+      />
+      
 
       {/* Redirect /dashboard to role-specific dashboard */}
       <Route
